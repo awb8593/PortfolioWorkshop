@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name Portfolio</title>
+
+    <!--Style sheets from the web. Box-icon is for icons. jsdelivr is to create a swiper function-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--SWIPER FROM: https://www.jsdelivr.com/package/npm/swiper-->
+    <!--SWIPER API: https://swiperjs.com/swiper-api-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.4/swiper-bundle.min.css" />
+
+    <!--Personal Style Sheets-->
+    <link rel="stylesheet" href="style/mainStyle.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/animations.css">
+    <link rel="stylesheet" href="style/homeBody.css">
+</head>
+<body>
+    <!--Background Image-->
+    <div class="background-image"></div>
+    
+    <!--Portfolio Navigation Bar-->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        
+        <nav class="navbar">
+            <a href="index.html" style="--i:1" class="active">Home</a>
+            <a href="#" style="--i:2">Section_Name</a>
+            <a href="#" style="--i:3">Section_Name</a>
+            <a href="#" style="--i:4">Section_Name</a>
+        </nav>
+    </header>
+
+    <!--Home/Portfolio Introduction Section-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, my name is</h3>
+            <h1>Your Name</h1>
+            <!--Animated Text-->
+            <h3></h3>
+            <p></p>
+            <!--Personal Website Links-->
+            <div class="social-media">
+                <a href="#" ><i class='#'></i></a> <!--LinkedIn-->
+                <a href="#" ><i class='#'></i></a> <!--GitHub-->
+                <a href="#" ><i class='#'></i></a> <!--Resume Download-->
+            </div>
+            <!--Link to About Me Section-->
+            <a href="#" class="#">Learn More About Me</a>
+        </div>
+        <!--Floating Image-->
+        <div class="home-img">
+            <img src="images/coms5.png" alt="PortfolioImage">
+        </div>
+    </section>
+
+    <!--About Me Section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="#" alt="Portrait of YourName">
+        </div>
+        <div class="about-content">
+            <h4 class="heading">Title <span>Title</span></h4>
+            <h3>Title</h3>
+            <p>About ME
+            </p>
+        </div>
+    </section>
+
+    <!--Skills Section-->
+    <section class="skills" id="skills">
+        <h2 class="heading"></h2>
+        <div class="skills-container">
+            <!--Programming Languages-->
+            <div class="skills-box">
+                <i class='bx bx-code-alt'></i>
+            </div>
+
+            <!--Software-->
+            <div class="skills-box">
+                <!--TODO: Fill in with Software Applications-->
+            </div>
+
+            <!--Education-->
+            <div class="skills-box">
+                <i class='bx bx-book-bookmark'></i>
+                <h3>Education</h3>
+                <ul id="education">
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Portfolio Work Section-->
+    <section class="work" id="work">
+        <!--Swiper Main Container-->
+        <div class="swiper" class="portfolio"> 
+
+            <!--Swiper Title-->
+            <div class="portfolio-header">
+                <h4>Games</h4>
+            </div>
+
+            <!--Swiper Wrapper and the slides-->
+            <div class="swiper-wrapper"><!--container-->
+
+                <!--Project 1 Name-->
+                <div class="swiper-slide"> <!--portBox-->
+                    <div class="swiper-slide">
+                        <img src="images/beingHuman.png" alt="">
+                        <!--Slide Up Overlay-->
+                        <div class="project-layer">
+                            <h4>Project Title</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, mollitia! 
+                                Similique et fugit alias nisi, quis pariatur tenetur, maxime fuga enim iusto 
+                                sunt ea consequuntur earum facilis harum, itaque sequi?
+                            </p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Project 2 Name-->
+
+                <!--Project 3 Name-->
+
+            </div>
+
+            <!--Visual representation of which slide the user is on-->
+            <div class="swiper-pagination"></div>
+        </div>
+        
+        <!--Further Sections Below-->
+
+    </section>
+
+    <!--Contact Section-->
+    <section class="contact" id="contact">
+        <!--Title-->
+        <h2 class="heading">Contact <span>Me</span></h2>
+        
+        <!--Form from https://getform.io/-->
+        <!--Forms allow users to input text and submit them to your email-->
+        <form action="https://getform.io/f/db83deb4-ed4f-42ef-9297-973ed7b9caa7" method="POST">
+            <!--Top Input Box: User Name and Email Address-->
+            <div class="input-box">
+            </div>
+
+            <!--Subject Input Box: Subject line of the message-->
+            <div class="input-box">
+                <input type="text" name="subject" placeholder="Email Subject">
+            </div>
+
+            <!--Message Input Box: User's Message-->
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+
+            <!--Submit Button-->
+            <input type="#" value="#" class="btn">
+        </form>
+    </section>
+
+    <!--Footer-->
+    <section class="footer">
+        <!--Copyrights go here-->
+        <div class="footer-text">
+        </div>
+        <!--Button to go Home-->
+        <div class="footer-icon">
+            <a href="#home"><i class='bx bx-up-arrow-circle'></i></a>
+        </div>
+    </section>
+
+    <!--Scripts-->
+    <script type="module">
+        import swiper from 'https://cdn.jsdelivr.net/npm/swiper@10.3.0/+esm'
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.4/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="scripts/function.js"></script>
+      
+</body>
+
+</html>
