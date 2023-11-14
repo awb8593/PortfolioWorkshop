@@ -95,6 +95,9 @@
     filter: drop-shadow(0 0 20px var(--main-color));
     opacity: 0;
     /*TODO: ADD ANIMATION TO IMAGE*/
+    animation:zoomIn 1s ease forwards,
+    floatImage 4s ease-in-out infinite,
+    animation-delay 2s 3s;
 }
 
 /*Ignore for now*/
@@ -121,6 +124,7 @@
     height: 4rem;
     background: transparent;
     /*TODO: STYLE THE ICONS*/
+    animation: slideLeft 0.5s ease forwards;
 }
 
 .social-media a:hover {
@@ -193,6 +197,11 @@
 }
 /*TODO: SET UP SKILLS CONTAINER*/
 .skills-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .skills-container .skills-box{

@@ -23,9 +23,18 @@
 }
 
 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 70rem;
+    height: 39.5rem;
+    border-radius: 2rem;
+    box-shadow: 0, 0, 1rem var(--second-bg-color);
 }
 
 .swiper-slide img {
+    display: block;
+    width: 100%;
+    transition: 0.5s ease;
 }
 
 /*Increase the size of the image*/

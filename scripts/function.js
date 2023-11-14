@@ -1,6 +1,10 @@
 // ANIMATE TEXT - TYPING EFFECT
 var typed = new Typed(".multiple-text", {
-    //TODO: IMPLEMENT FUNCTIONALITY
+    strings:["Software Engineer", "Computer Scientist", "Backend Developer", "Hackathon Competitor", "Enthusiast of Mysteries"],
+    typeSpeed: 100, 
+    backSpeed: 100, 
+    backDelay: 1000, 
+    loop: true
     }
 ) 
 
